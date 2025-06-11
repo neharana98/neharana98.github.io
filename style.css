@@ -105,3 +105,45 @@ footer {
   color: #555;
   border-top: 2px solid #ffd700;
 }
+
+/* Article Cards Section */
+.article-cards-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
+}
+
+.article-card {
+  flex: 0 0 auto;
+  width: 180px;
+  text-align: center;
+  background: #fffafd;
+  border-radius: 8px;
+  border: 1px solid #ffe4ec;
+  padding: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+  scroll-snap-align: start;
+}
+
+.article-card:hover {
+  transform: scale(1.03);
+}
+
+.article-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.article-card h3 {
+  font-size: 0.9rem;
+  color: #cc2b7d;
+  margin: 0;
+  line-height: 1.3;
+}
